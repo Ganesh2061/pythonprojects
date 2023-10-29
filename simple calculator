@@ -1,0 +1,13 @@
+
+#simple calculator 
+
+
+sum=0
+while(True):
+  uinput=(input("enter the item price and press q for quit\n"))
+  if (uinput!="q"):
+    sum=sum+int(uinput)
+    print(f"your total for now is : {sum}")
+  else:
+    print(f"your bill amount is: {sum}.Thanks for shopping with us")
+    break
