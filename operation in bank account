@@ -1,0 +1,28 @@
+#python program for checking,withdraw and deposite the balance in the account
+
+def balance_check(curr_balance):
+  print("your current balance=",curr_balance)
+
+def deposite_balance(curr_balance):
+  deposite_amount=int(input("Enter the amount to deposite"))
+  curr_balance=curr_balance+deposite_amount
+  print("your current balance =",curr_balance)
+  
+def withdraw_balance(curr_balance):
+  withdraw_amount=int(input("Enter the amount to withdraw"))
+  curr_balance=curr_balance-withdraw_amount
+  print("your current balance =",curr_balance)
+
+def main():
+  current_balance=int(input("Enter the current balance"))
+  choice=int(input("Enter the what you want to do\n1.Deposite balance\n2.Withdraw balance\n3.Check balance\n"))
+  if choice==1:
+    deposite_balance(current_balance)
+  elif choice==2:
+    withdraw_balance(current_balance)
+  else:
+    balance_check(current_balance)
+  print("Thank you for use. Have a good day")
+    
+  
+main()
