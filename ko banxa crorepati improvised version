@@ -1,0 +1,29 @@
+questions=[["Who is the prime minister of Nepal after the implementation of democratic system","BP Koirala","GIrja Parsad Koirala","Manmohan Ahakari","Madhan Bhandari",1],
+           ["How many no of team are going to participate in Nepal Premier League",4,5,9,8,4],
+           ["How many no of caste are lived in Nepal",123,134,122,142,1],
+           ["Which programming language is mostly used in web ","c","c++","rust","php"],
+           [" Where does Yari Bhanjyang lie?","Humla","Jumla","Mugu","Dolpa",1],
+           ["How many districts are there in Lumbini Province?",5,14,8,12,4],
+           ["Which was the first Nepali language magazine?","Gorkha Bharat Jeewan","Kantipur","Disanirdeshan","sarad",1],
+        ]
+
+
+levels=[1000,2000,3000,5000,10000,20000,40000]
+money=0
+for i in range(0,len(questions)):
+    question = questions[i]
+    print(f"Question for Rupees Rs.{levels[i]}")
+    print(question[0])
+    print(f"a.{question[1]}         b.{question[2]}")
+    print(f"c.{question[3]}         d.{question[4]}")
+    try:
+      answer=int(input("Enter from 1 to  4"))
+      if answer == question[-1]:
+        print(f"Correct Answer You Won Rs .{levels[i]}")
+        money=levels[i]
+      else:
+         print("Wrong Answer!! Better luck Next Time")
+
+         print(f"Congratulation!! Total Amount You Received is Rs{money}")
+    except ValueError:
+        print("Please check the input that you inserted")
