@@ -1,0 +1,13 @@
+import time
+from time import strftime
+time_1=time.localtime()
+hour=int(time.strftime("%H"))
+amorpm=time.strftime("%p")
+if(hour>0 and hour<12 and amorpm=='AM'):
+    print('Good morning sir/mam')
+elif(hour>1 and hour<5 and amorpm=='PM'):
+    print('Good Afternoon sir/mam')
+elif(hour>5 and hour<12 and amorpm=='PM'):
+    print('Good night sir/mam')
+else:
+    print('Hello')
