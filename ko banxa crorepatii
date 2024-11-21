@@ -1,0 +1,37 @@
+print("Welcome to ko banxa crorepati game")
+print("Question for first 1000 rupee")
+ans1=str(input("Who is the first Prime minister of Nepal after the implementation of the democratic system "))
+if ans1 == 'BP koirala':
+    print("Congratulation you win 1000 rupee")
+    ask1=input("Do you want to play more rounds if yes press 1 else press 0")
+    if ask1 == 0:
+        print("The final money you get is 1000 ")
+    else:
+        print("")
+        print("Question for 10000 rupees")
+        ans2=int(input("How many number of Franchies team are going to participate in first edition of Nepal Premier League"))
+        if ans2 == 8:
+            print("Congratulation you will 10000 rupees")
+            ask2 = input("Do you want to play more rounds if yes press 1 else press 0")
+            if ask2 == 0:
+                print("The final money you get is 10000 ")
+        else:
+                print("")
+                print("Question for 100000 rupees")
+                ans3=int(input('How many number of different caste are lived in Nepal'))
+                if ans3 == 123:
+                    print("Congratulation You won 100000 rupees")
+                    ask3 = input("Do you want to play more rounds if yes press 1 else press 0")
+                    if ask3 == 0:
+                        print("The final money you get is 100000 ")
+                else:
+                    print("")
+                    print("Question for 10000000 rupees")
+                    ans4=input("What is the value of PI")
+                    if ans4 == 3.141592653589793238462643383279502884197:
+                        print("Congratulation You won 10000000 rupees")
+                        print("The final amount you win is 10000000!!!!!!!!!!")
+
+else:
+    print("The answer is Wrong. Better luck next time ")
+    print("Thank you for coming ")
