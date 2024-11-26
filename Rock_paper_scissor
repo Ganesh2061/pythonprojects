@@ -1,0 +1,37 @@
+#Rock paper scissor
+
+
+import random
+#top
+userchoice=int(input("choose 0 for rock, 1 for paper,2 for scissor"))
+if (userchoice>2):
+  print("Please choose number between 0 to 2")
+else:
+ rock=0
+ paper=1
+ scissor=2
+ win=True
+ lose=False
+ comchoice = random.randint(0,2)
+ print(f"computer choice is {comchoice}")
+ def logic(comchoice,userchoice):
+  if(comchoice==userchoice):
+   return 0
+  if(comchoice==0 and userchoice==2):
+    return -1
+  if(comchoice==1 and userchoice==0):
+    return -1
+  elif(comchoice==2 and userchoice==1):
+   return -1
+  else:
+    return 1
+
+
+ #function calling
+ result=logic(comchoice,userchoice)
+ if(result==1):
+   print("You Win")
+ elif(result==0):
+   print("Match Draw")
+ else:
+   print("You lose")
